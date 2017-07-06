@@ -1,13 +1,18 @@
+require "Game/SetName"
+
 local gameObject;
-local userName;
+local transform;
+local account;
 local password;
 
 
-function GetUI(ui)
-	gameObject=ui;
-	userName=gameObject.Find("InputUserName"):GetComponent("InputField");
-	password=gameObject.Find("InputPassword"):GetComponent("InputField");
-	gameObject.Find("BtnLogin"):GetComponent("Button").onClick:AddListener(OnLoginClick);
+function GetUI(ui)	
+	gameObject=ui;	
+	transform=gameObject.transform;
+	SetName.GetUI(transform);
+	account=gameObject.Find("Login/InputAccount"):GetComponent("InputField");
+	password=gameObject.Find("Login/InputPassword"):GetComponent("InputField");
+	gameObject.Find("Login/BtnLogin"):GetComponent("Button").onClick:AddListener(OnLoginClick);
 	--UpdateBeat:Add(UpdateData, self)
 end
 
@@ -16,12 +21,14 @@ function UpdateData()
 end
 
 function OnLoginClick()
+	account.transform.parent.gameObject:SetActive(false);
+	transform:FindChild("SelectName").gameObject:SetActive(true);
 	if password.text~="1123" then
 		print("please input the correct password!");
 		return;
 	end
 	
-	if	userName.text=="sea" and password.text=="1123" then
+	if	account.text=="sea" and password.text=="1123" then
 	print("Input the correct!");
 	end	
 end

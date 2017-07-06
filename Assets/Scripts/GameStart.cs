@@ -8,7 +8,7 @@ public class GameStart : MonoBehaviour {
     private string message;
 
 	void Start () {
-        CheckExtractResource();
+        CheckExtractResource();        
 	}
     void Update()
     {

@@ -57,7 +57,8 @@ lua/3rd/sproto/testrpc.lua|62e1d66bbdf0abb43f8c14f9be9f007b
 lua/Common/define.lua|6ba6a7dd9e0f1814f6be5e03811d1cc7
 lua/Common/functions.lua|def59aeb988eb55c9d92a6c9d737d99f
 lua/Common/protocal.lua|be8b440f623340c9a0ca9791799db91b
-lua/Game/Login.lua|801e7c71e4f179305788b6b65b7e0016
+lua/Game/Login.lua|b2fc61af5a274b3450cd6ac1fd2c7764
+lua/Game/SetName.lua|755a0b326ba0a645123c819084fa78d2
 lua/Logic/GameManager.lua|e5a945c464b02cf2f64fb339d1bb305b
 lua/Logic/LuaClass.lua|12f5ff4392c86afd0126bbd1aad11d5d
 lua/Logic/Network.lua|d097114b7f2cb2da8bf5715d6ec63ba7

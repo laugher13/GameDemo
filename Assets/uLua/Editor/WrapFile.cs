@@ -34,7 +34,7 @@ public static class WrapFile {
         _GT(typeof(Button)),   
         _GT(typeof(Button.ButtonClickedEvent)),
         _GT(typeof(UnityEventBase)),
-        _GT(typeof(UnityEvent)),
+        _GT(typeof(UnityEvent)),       
 
         //unity                        
         _GT(typeof(Component)),
@@ -90,7 +90,7 @@ public static class WrapFile {
         _GT(typeof(AnimationBlendMode)),    
         _GT(typeof(Texture)),
         _GT(typeof(RenderTexture)),
-        _GT(typeof(ParticleSystem)),
+        _GT(typeof(ParticleSystem)),        
         
 
         //ngui
